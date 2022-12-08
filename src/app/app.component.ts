@@ -9,30 +9,30 @@ import { ApiService } from './api.service';
 export class AppComponent {
   title = 'fileupload';
 
-  studentimg:any
+//   studentimg:any
 
-  constructor(private api:ApiService){}
+//   constructor(private api:ApiService){}
 
-  savestudent(obj:any)
-  {
+//   savestudent(obj:any)
+//   {
 
-    if(this.studentimg)
-    {
+//     if(this.studentimg)
+//     {
 
-      var formdata= new FormData();
-      formdata.append("student_img",this.studentimg);
-      formdata.append("studename",obj.value.s_name);
-      formdata.append("studentmobile",obj.value.s_mobile)
-this.api.postdata(formdata).subscribe(res=>console.log(res))
+//       var formdata= new FormData();
+//       formdata.append("student_img",this.studentimg);
+//       formdata.append("studename",obj.value.s_name);
+//       formdata.append("studentmobile",obj.value.s_mobile)
+// this.api.postdata(formdata).subscribe(res=>console.log(res))
 
-    }
-    else{
-      alert("Please fill form")
-    }
-  }
+//     }
+//     else{
+//       alert("Please fill form")
+//     }
+//   }
 
-  setstudentimage(img:any)
-  {
-    this.studentimg=img.target.files[0];
-  }
+//   setstudentimage(img:any)
+//   {
+//     this.studentimg=img.target.files[0];
+//   }
 }

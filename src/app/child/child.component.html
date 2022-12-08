@@ -1,0 +1,10 @@
+
+<form #userform="ngForm" (submit)="saveuser(userform)">
+
+    <input type="text" placeholder="Enter user name" name="name" ngModel>
+<br>
+<input type="text" placeholder="Enter user email" name="email" ngModel>
+<br>
+<input type="file" name="image" (change)="userimage($event)" ngModel>
+<button>Save</button>
+</form>
